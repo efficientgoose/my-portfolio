@@ -1,0 +1,58 @@
+[
+	{
+		"__TYPE__": "SharedSliceContent",
+		"variation": "default",
+		"primary": {
+			"heading": {
+				"__TYPE__": "FieldContent",
+				"value": "sweet",
+				"type": "Text"
+			}
+		},
+		"items": [
+			{
+				"__TYPE__": "GroupItemContent",
+				"value": [
+					[
+						"title",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "sense",
+							"type": "Text"
+						}
+					],
+					[
+						"time_period",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "dress",
+							"type": "Text"
+						}
+					],
+					[
+						"institution",
+						{
+							"__TYPE__": "FieldContent",
+							"value": "work",
+							"type": "Text"
+						}
+					],
+					[
+						"description",
+						{
+							"__TYPE__": "StructuredTextContent",
+							"value": [
+								{
+									"type": "paragraph",
+									"content": {
+										"text": "Consectetur duis nisi amet occaecat incididunt sit. Reprehenderit cillum sint duis mollit eu sit excepteur fugiat occaecat nisi veniam laboris aliqua. Eu non ea labore irure elit est esse aliquip."
+									}
+								}
+							]
+						}
+					]
+				]
+			}
+		]
+	}
+]

@@ -50,7 +50,7 @@ export default function ContentList({
               end: "bottom center",
               toggleActions: "play none none none",
             },
-          }
+          },
         );
       });
 
@@ -128,7 +128,7 @@ export default function ContentList({
             {isFilled.keyText(item.data.title) && (
               <li
                 key={index}
-                className="list-item opacity-0f"
+                className="list-item opacity-0"
                 onMouseEnter={() => onMouseEnter(index)}
                 onMouseLeave={onMouseLeave}
                 ref={(el) => {
@@ -144,7 +144,7 @@ export default function ContentList({
                     <span className="text-3xl font-bold">
                       {item.data.title}
                     </span>
-                    <div className="flex gap-3 text-yellow-400 text-lg font-bold">
+                    <div className="flex gap-3 text-lg font-bold text-yellow-400">
                       {item.tags.map((tag, index) => (
                         <span key={index}>{tag}</span>
                       ))}
