@@ -2,9 +2,10 @@ import Bounded from "@/components/Bounded";
 import Button from "@/components/Button";
 import Heading from "@/components/Heading";
 import { Content } from "@prismicio/client";
-import { PrismicNextImage } from "@prismicio/next";
 import { PrismicRichText, SliceComponentProps } from "@prismicio/react";
 import Avatar from "./Avatar";
+import { MdEditDocument } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa6";
 
 /**
  * Props for `Biography`.
@@ -24,17 +25,26 @@ const Biography = ({ slice }: BiographyProps): JSX.Element => {
         <Heading as="h1" size="lg" className="col-start-1">
           {slice.primary.heading}
         </Heading>
-        <div className="prose prose-xl prose-slate prose-invert col-start-1">
+        <div className="prose prose-xl prose-slate prose-invert col-start-1 leading-snug">
           <PrismicRichText field={slice.primary.description} />
         </div>
-        <Button
-          linkField={slice.primary.button_link}
-          label={slice.primary.button_text}
-        />
+
+        <div className="col-start-1 mt-2 flex gap-10">
+          <Button
+            linkField={slice.primary.button_link}
+            label={slice.primary.button_text}
+            renderIcon={<MdEditDocument />}
+          />
+          <Button
+            linkField={slice.primary.secondary_button_link}
+            label={slice.primary.secondary_button_text}
+            renderIcon={<FaLinkedin />}
+          />
+        </div>
 
         <Avatar
           image={slice.primary.avatar}
-          className="row-start-1 max-w-sm md:col-start-2 md:row-end-3"
+          className="row-start-1  max-w-sm md:col-start-2 md:row-end-3"
         />
       </div>
     </Bounded>

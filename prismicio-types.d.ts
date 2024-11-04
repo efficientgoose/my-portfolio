@@ -544,6 +544,26 @@ export interface BiographySliceDefaultPrimary {
    * - **Documentation**: https://prismic.io/docs/field#image
    */
   avatar: prismic.ImageField<never>;
+
+  /**
+   * Secondary Button Text field in *Biography → Default → Primary*
+   *
+   * - **Field Type**: Text
+   * - **Placeholder**: *None*
+   * - **API ID Path**: biography.default.primary.secondary_button_text
+   * - **Documentation**: https://prismic.io/docs/field#key-text
+   */
+  secondary_button_text: prismic.KeyTextField;
+
+  /**
+   * Secondary Button Link field in *Biography → Default → Primary*
+   *
+   * - **Field Type**: Link
+   * - **Placeholder**: *None*
+   * - **API ID Path**: biography.default.primary.secondary_button_link
+   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   */
+  secondary_button_link: prismic.LinkField;
 }
 
 /**

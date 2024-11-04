@@ -50,6 +50,21 @@
             "constraint": {},
             "thumbnails": []
           }
+        },
+        "secondary_button_text": {
+          "type": "Text",
+          "config": {
+            "label": "Secondary Button Text",
+            "placeholder": ""
+          }
+        },
+        "secondary_button_link": {
+          "type": "Link",
+          "config": {
+            "label": "Secondary Button Link",
+            "placeholder": "",
+            "select": null
+          }
         }
       },
       "items": {}
