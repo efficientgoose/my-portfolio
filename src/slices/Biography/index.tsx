@@ -20,6 +20,7 @@ const Biography = ({ slice }: BiographyProps): JSX.Element => {
     <Bounded
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
+      isTechlist={false}
     >
       <div className="grid gap-x-8 gap-y-8 md:grid-cols-[2fr,1fr]">
         <Heading as="h1" size="lg" className="col-start-1">
