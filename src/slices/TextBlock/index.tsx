@@ -9,6 +9,8 @@ export type TextBlockProps = SliceComponentProps<Content.TextBlockSlice>;
 /**
  * Component for "TextBlock" Slices.
  */
+
+// textblock
 const TextBlock = ({ slice }: TextBlockProps): JSX.Element => {
   return (
     <div className="max-w-prose">
