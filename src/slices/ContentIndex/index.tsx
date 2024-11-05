@@ -28,14 +28,17 @@ const ContentIndex = async ({
     <Bounded
       data-slice-type={slice.slice_type}
       data-slice-variation={slice.variation}
+      isTechlist={false}
     >
-      <Heading className="mb-8" size="xl">
+      <Heading className="mb-8" size="lg">
         {slice.primary.heading}
       </Heading>
 
       {isFilled.richText(slice.primary.description) && (
-        <div className="prose prose-xl prose-invert mb-10">
-          <PrismicRichText field={slice.primary.description} />
+        <div className="mb-16 text-4xl font-semibold">
+          <h3>
+            <PrismicRichText field={slice.primary.description} />
+          </h3>
         </div>
       )}
 
@@ -50,4 +53,3 @@ const ContentIndex = async ({
 };
 
 export default ContentIndex;
-
